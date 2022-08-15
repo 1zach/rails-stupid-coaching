@@ -1,5 +1,13 @@
-<h1><%= @params %></h1>
+<h1 class = "p-3">Stupid Coaching</h1>
 
-<%= @answer %><br>
-
-<%= link_to "Ask another question", ask_path %>
+<div class = "container">
+    <div class = "p-3 border-start border-5 dark">
+        <p><%= @params %></p>
+        <p>--You</p>
+    </div>
+    <div class = "mt-3 bg-info p-3 border-start border-5 dark">
+        <p><%= @answer %><br></p>
+        <p>--Your coach</p>
+    </div>
+    <a class = "text-decoration-none"<%=link_to "Ask another question", ask_path %></a>
+</div>
